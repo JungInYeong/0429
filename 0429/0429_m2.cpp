@@ -1,4 +1,4 @@
-// ½Ç½À8 vector Áßº¹»èÁ¦
+ï»¿// ì‹¤ìŠµ8 vector ì¤‘ë³µì‚­ì œ
 
 #include <iostream>
 #include <vector>
@@ -19,7 +19,7 @@ int main()
 
 	sort(myVector.begin(), myVector.end());	
 	
-	myVector.erase(unique(myVector.begin(), myVector.end()), myVector.end()); //unique´Â ¾²·¹±â°¡ ³²À½ ±×·¡¼­ ¹Ì¸® sort(Á¤·Ä)ÇÑ ÈÄ unique
+	myVector.erase(unique(myVector.begin(), myVector.end()), myVector.end()); //uniqueëŠ” ì“°ë ˆê¸°ê°€ ë‚¨ìŒ ê·¸ë˜ì„œ ë¯¸ë¦¬ sort(ì •ë ¬)í•œ í›„ unique
 		
 	printV(myVector);
 
