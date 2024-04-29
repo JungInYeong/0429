@@ -39,7 +39,7 @@ int main()
 
 	for (int i = 0; i < 100000000; i++)
 	{
-		test_vec2.reserve(100000000);
+		test_vec2.reserve(i);
 		test_vec2.push_back(i);
 	}
 	end2 = clock();
