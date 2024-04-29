@@ -22,7 +22,7 @@ int main()
 
 	for (int i = 0; i < 100000000; i++)
 	{
-		test_vec1.push_back(i);
+		test_vec1.push_back(i + 1);
 	}
 	end1 = clock();
 	result1 = (double)(end1 - start1);
@@ -40,7 +40,7 @@ int main()
 
 	for (int i = 0; i < 100000000; i++)
 	{
-		test_vec2.push_back(i);
+		test_vec2.push_back(i + 1);
 	}
 	end2 = clock();
 	result2 = (double)(end2 - start2);
