@@ -1,4 +1,5 @@
 // 실습8 2차원 배열 (동적할당으로)
+// col, row 반대
 
 #include <iostream>
 using namespace std;
