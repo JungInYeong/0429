@@ -1,9 +1,9 @@
 // 실습2
 // 1. 이름이 test_vec1이고 크기가 1인 정수형 벡터 생성
 // 2. test_vect1에 push_back()을 1억회 수행하여 1부터 1억까지 값을 추가, 소요신을 ms단위로 측정 후 출력
- // 3. 이름이 test_vec2이고 크기가 1인 정수형 벡터 생성
- // 4. reserve()로 1억개 만큼의 공간을 예약
- // 5. test_vec2에 push)back()을 1억회 수행하여 1부터 1억까지 값을 추가하고, 소요시간을 ms단위로 측정 후 출력
+// 3. 이름이 test_vec2이고 크기가 1인 정수형 벡터 생성
+// 4. reserve()로 1억개 만큼의 공간을 예약
+// 5. test_vec2에 push)back()을 1억회 수행하여 1부터 1억까지 값을 추가하고, 소요시간을 ms단위로 측정 후 출력
 
 #include <iostream>
 #include <time.h>
@@ -40,7 +40,6 @@ int main()
 
 	for (int i = 0; i < 100000000; i++)
 	{
-		
 		test_vec2.push_back(i);
 	}
 	end2 = clock();
