@@ -6,11 +6,11 @@
 using namespace std;
 
 void printV(vector<int>& myVector) {
-	cout << " ";
+	cout << " { ";
 	for (auto it = myVector.begin(); it != myVector.end(); ++ it) {
 		cout << *it << " ";
 	}
-	cout << endl;
+	cout << " }" << endl;
 }
 
 int main()
@@ -20,8 +20,9 @@ int main()
 	sort(myVector.begin(), myVector.end());	
 	
 	myVector.erase(unique(myVector.begin(), myVector.end()), myVector.end()); //unique는 쓰레기가 남음 그래서 미리 sort(정렬)한 후 unique
-		
+	
+	
 	printV(myVector);
-
+	
 	return 0;
 }
