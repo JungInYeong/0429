@@ -20,6 +20,9 @@ int main()
 	list<int> myList = { 5,4,3,4,2,1,1 };
 
 	int count = 0;
+
+	// findNum(iter,num);
+	// find4( ); : 범용성이 높다.
 	for (auto iter = myList.begin(); iter != myList.end(); iter++)
 	{
 		if (*iter == 4)
@@ -51,6 +54,8 @@ int main()
 	myList.splice(myList.begin(), List2);
 	printmy(myList);
 
+	// merge는 정렬 기능이 있다.
+	// splice는 정렬이 없음.
 
 	return 0;
 }
