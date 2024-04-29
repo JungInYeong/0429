@@ -7,10 +7,12 @@ using namespace std;
 
 void printmy(list<int> myList)
 {
+	cout << "{ ";
 	for (list<int>::iterator iter = myList.begin(); iter != myList.end(); iter++)
 	{
 		cout << *iter << " ";
 	}
+	cout << "}";
 }
 
 int main()
@@ -25,7 +27,7 @@ int main()
 			count++;
 		}
 	}
-	cout << "4는 " << count << "개 입니다." << endl;
+	cout << "4는 " << count << "개 입니다.";
 
 	cout << endl;
 	
