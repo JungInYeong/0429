@@ -22,12 +22,12 @@ int main()
 
 	for (int i = 0; i < 100000000; i++)
 	{
-		test_vec1.push_back(0);
+		test_vec1.push_back(i);
 	}
 	end1 = clock();
 	result1 = (double)(end1 - start1);
 
-	cout << "첫 번째 수행 시간 : " << result1 << "ms(milliseconds)" << endl;
+	cout << "첫 번째 수행 시간 : " << result1 << "ms" << endl;
 
 
 	vector<int>test_vec2(1);
@@ -40,7 +40,7 @@ int main()
 	for (int i = 0; i < 100000000; i++)
 	{
 		test_vec2.reserve(100000000);
-		test_vec2.push_back(0);
+		test_vec2.push_back(i);
 	}
 	end2 = clock();
 	result2 = (double)(end2 - start2);
