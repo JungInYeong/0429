@@ -8,7 +8,7 @@ using namespace std;
 void printmy(list<int> myList)
 {
 	cout << "{ ";
-	for (list<int>::iterator iter = myList.begin(); iter != myList.end(); iter++)
+	for (auto iter = myList.begin(); iter != myList.end(); iter++)
 	{
 		cout << *iter << " ";
 	}
@@ -20,7 +20,7 @@ int main()
 	list<int> myList = { 5,4,3,4,2,1,1 };
 
 	int count = 0;
-	for (list<int>::iterator iter = myList.begin(); iter != myList.end(); iter++)
+	for (auto iter = myList.begin(); iter != myList.end(); iter++)
 	{
 		if (*iter == 4)
 		{
