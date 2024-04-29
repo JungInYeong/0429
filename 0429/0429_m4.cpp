@@ -48,7 +48,7 @@ int main()
 	cout << endl;
 
 	list<int>List2 = { 0 };
-	myList.splice(myList.end(), List2);
+	myList.splice(myList.begin(), List2);
 	printmy(myList);
 
 
