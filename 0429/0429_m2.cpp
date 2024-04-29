@@ -19,7 +19,10 @@ int main()
 
 	sort(myVector.begin(), myVector.end());	
 	
-	myVector.erase(unique(myVector.begin(), myVector.end()), myVector.end()); //unique는 쓰레기가 남음 그래서 미리 sort(정렬)한 후 unique
+	
+	//unique는 앞에서부터 연속으로 같은숫자가 있어야 반복 숫자 제거
+	//unique는 쓰레기가 남음 그래서 미리 sort(정렬)한 후 unique
+	myVector.erase(unique(myVector.begin(), myVector.end()), myVector.end()); 
 	
 	
 	printV(myVector);
